@@ -1,8 +1,8 @@
 import { Clock } from './clock.js';
 import { Tabs } from './tabs.js';
-import { StopwatchTimer } from './stopwatchTimer.js';
+import { Stopwatch, Timer } from './stopwatchTimer.js';
 
 new Tabs().init('timer');
 new Clock().init();
-new StopwatchTimer('timer', 300);
-new StopwatchTimer('stopwatch', 0);
+new Stopwatch().init();
+new Timer(300).init();
